@@ -13,4 +13,4 @@ all: $(OBJS)
 	$(LATEX) -interaction nonstopmode $<
 
 clean:
-	rm -rf *.log *.aux *.out *.pdf .*.swp
+	rm -rf *.log *.aux *.out *.pdf .*.swp *.dvi
