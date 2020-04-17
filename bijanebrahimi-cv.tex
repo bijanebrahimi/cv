@@ -5,13 +5,12 @@
 	
 	% If your name is very short, use just one of the lines below
 	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
-	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Bijan}}}}} % First name
-	
-	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Ebrah‫imi}}}}} % Last name
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Bijan Ebrahimi}}}}} % First name
 	
 	\vspace{6pt}
 	
-	{\huge Senior System Developer} % Career or current job title
+	{\huge System/Kernel Developer}\\ % Career or current job title
+	{Born in May 2nd 1986, Mashhad, Iran}
 \end{minipage}
 \begin{minipage}[t]{0.35\textwidth} % 27.5% of the page width for the first row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
@@ -23,6 +22,7 @@
 	{\href{mailto:bijanebrahimi@riseup.net}{bijanebrahimi@riseup.net}}\\	
 	{\href{https://bijanebrahimi.github.io/blog}{bijanebrahimi.github.io/blog}}\\
 	{\href{https://github.com/bijanebrahimi}{github.com/bijanebrahimi}}\\
+	{{Skype:BijanErahimi1986}}
 	%\icon{Twitter}{12}{\href{https://twitter.com/@alyxvance}{@alyxvance}}\\
 \end{minipage}
 
@@ -37,9 +37,10 @@
 \begin{minipage}[t]{1\textwidth}
 %	\vspace{-\baselineskip} % Required for vertically aligning minipages
 I am a senior system developer and team leader currently working
-as the Project development manager at Zharfpouyan.
+as the Project development manager at Zharfpouyan, managing development
+of Zharf-Router project (An IP/IPv6/MPLS enabled router).
 Developing and enhancing the core capabilities of the operating system,
-including kernel and device driver development,
+including kernel funcationality and kernel network stack programming,
 designing and implementing software network-based solutions, and managing
 technical teams to achieve the project goals at the Zharf router project is
 part of my daily routine jobs.
@@ -67,6 +68,55 @@ code and design and I like to be part of anything happening around such great pr
 %	\bubbles{5/Eclipse, 6/git, 4/Office, 3/Inkscape, 3/Blender}
 %\end{center}
 
+\cvsect{Skills}
+\begin{entrylist}
+	\entry
+		{}
+		{Programming Languages}
+		{}
+		{C, CPP, Python, Unix Shell}
+	\entry
+		{}
+		{BSD Kernel Network Stack Programming}
+		{}
+		{Ethernet, PPP, HDLC, MPLS, IPv4, TCP, UDP, BPF}
+	\entry
+		{}
+		{Network Routing Protocols}
+		{}
+		{RSVP-TE, Quagga, FRRouting}
+	\entry
+		{}
+		{BSD Kernel Network Interface/Firewall Programming}
+		{}
+		{GIF, GRE, mGRE, MPW, VPWS, MP-BGP, RSVP-TE, IPFW}
+	\entry
+		{}
+		{Kernel NIC Drivers Programming}
+		{}
+		{Intel Ethernet Drivers, Digium T1/E1 Drivers} % Sangoma T1/E1
+	\entry
+		{}
+		{Documenting}
+		{}
+		{\LaTeX, Markdown}
+	\entry
+		{}
+		{Version Control Systems/Platforms}
+		{}
+		{Git, Gitlab}
+	\entry
+		{}
+		{System Administration}
+		{}
+		{OpenBSD, FreeBSD, GNU/Linux}
+	\entry
+		{}
+		{Interets \& Hobbies}
+		{}
+		{BSD Kernel Development, DPDK, GDB Remote Serial Protocol, }
+\end{entrylist}
+
 \cvsect{Experience}
 \begin{entrylist}
 	\entry
@@ -79,28 +129,31 @@ code and design and I like to be part of anything happening around such great pr
 		leading the development team, reviewing code changes and managing
 		tasks according to project's deadlines and keeping all aspects of
 		the project relevant. Also as a senior and kernel developer,
-		I am responsible to adding new kernel features and guiding the
-		team through better solutions and clean and secure code changes.
+		I am responsible for adding new kernel features and guiding the
+		team through better solutions, more secure and cleaner codes.
 		\\
 		\\
 		Detailed Achievements:
 		\begin{itemize}
 			\item Extending BSD kernel's network Stack, adding new protocols
-			      and features like customized MPL4 network stack,
-			      MPLS-TE tunnels, L2TPv3 tunnels and MPLS L2/L3 VPNs,
-			      MacVLAN alternatives and many more.
-			\item Porting Intel NIC drivers, extending hardware support.
-			\item Implementing  new or Improving existing network routing
-			      protocol daemons.
+			      and features like customized MPLS network stack,
+			      MPLS-TE tunnels, L2TPv3 tunnels, MPLS L2/L3 VPNs,
+			      mGRE tunnels and many more.
+			\item Porting Intel NIC drivers, extending driver support.
+			\item Implementing new or Improving existing network routing
+			      protocol daemons like RSVP, OSPF, LDP, etc.
+			\item Design and re-implementation of a new Infrastructure for
+				  core projects. Introducing one step builds, Regression tests,
+				  Embeded sulutions And implementing Faster, more secure boot
+				  process and more.
+			\item Designing the infrastructure to keep and maintain technical and
+				  non-technical documentations powered by LaTex system and
+				  git versioning system.
+			\item Extending automated tests to any appliance network devices,
+				  even telephony services like VOIP devices.
 			\item Defining an acceptable level of technical knowledge for
 			      developers and designing educational courses to prepare
-			      new comers adapting project's standards and security concerns.
-			\item Design and re-implementation of a new Infrastructure for
-				  core projects, namely the Zharf router project.
-			\item Designing an infrastructure to keep and maintain technical and
-				  non-technical documentations based on LaTex system.
-			\item Extending Automated test to any appliance network, Including
-			      Cisco routers or telephony solutions.
+			      new comers adapting project's standards.
 		\end{itemize}
 		\texttt{Team Leader}\slashsep
 		\texttt{System Architect}\slashsep
@@ -116,7 +169,8 @@ code and design and I like to be part of anything happening around such great pr
 		are easy to run, maintain and upgrade. As a co-founder, I managed
 		to design and run infrastructures that Pancake is built upon providing
 		instant database full backups and redundancy solutions as well as
-		providing the ability to run instances-in-the-past features on demand.
+		providing the ability to run instances-in-the-past features on customer
+		demand.
 		\\
 		\texttt{System Architecture}\slashsep
 		\texttt{System Developer}\slashsep
@@ -128,7 +182,7 @@ code and design and I like to be part of anything happening around such great pr
 		{Zharfpouyan Co.}
 		{
 		As a senior developer I developed and maintained Zharf-Router core project
-		infrastructures like kernel network stack, routing services like LDP, RSVP,
+		infrastructures like kernel network stack, routing services like LDP,
 		OSPF, ISIS and etc.
 		\\
 		\\
@@ -138,6 +192,11 @@ code and design and I like to be part of anything happening around such great pr
 				  and it's updates.
 			\item Adding new features and protocols to Kernel's network stack like
 				  MGRE and L2TPv3 and MP-BGP Tunnels.
+			\item Adding new features and improving current implementations of
+				  routing services like LDP, OSPF, ISIS, and etc.
+			\item Fixing kernel dead-locks in legacy drivers like E1 drivers and
+				  Various memory leaks in kernel network stack increasing reliability
+				  and performance.
 			\item Migrating the entire project from SVN to Git and maintaining a
 				  local Gitlab repository with CI jobs and git hooks automating
 				  many tasks improving product quality.
@@ -150,8 +209,6 @@ code and design and I like to be part of anything happening around such great pr
 			\item Designing one step builds and debug to core infrastructures of the
 				  projects leading to faster development, fixing bugs and releasing
 				  cycles for the product. 
-			\item Fixing kernel dead-locks in legacy drivers like E1 drivers and
-			      Improving kernel network stack performance.
 		\end{itemize}
 		\texttt{Senior System Developer}\slashsep
 		\texttt{BSD Kernel Developer}\slashsep
@@ -187,7 +244,8 @@ code and design and I like to be part of anything happening around such great pr
 		\\
 		\texttt{VPS Management}\slashsep
 		\texttt{Firewall}\slashsep
-		\texttt{Web Server}\slashsep
+		\texttt{Web Services}\slashsep
+		\texttt{MySQL}\slashsep
 		\texttt{VPN Solution}\slashsep
 		\texttt{Automation}
 		}
@@ -197,41 +255,15 @@ code and design and I like to be part of anything happening around such great pr
 		{GoldNet co.}
 		{
 		As a contractor, I worked in a proxy caching service project, boosting the
-		speed and keeping the network traffic at minimum possible. The project was
-		involved the full stack development including designing database and UI
-		as well as backend development.
+		speed and keeping the network traffic at the minimum possible. The project
+		was involved with full stack development including designing database and UI
+		as well as backend development in PHP.
 		\\
 		\texttt{PHP}\slashsep
 		\texttt{MySQL}\slashsep
 		\texttt{HTML}\slashsep
 		\texttt{CSS}\slashsep
 		\texttt{JS}
-		}
-	\entry
-		{2008 - 2012}
-		{Freelance Developer}
-		{}
-		{
-		\\
-		\texttt{PHP}\slashsep
-		\texttt{MySQL}\slashsep
-		\texttt{HTML}\slashsep
-		\texttt{CSS}\slashsep
-		\texttt{JS}
-		}
-	\entry
-		{2004 - 2008}
-		{Freelance Developer}
-		{}
-		{
-		Developing customized CRM solutions as a contractor for companies
-		such as Jahan Hami Amin Insurance, an Insurance brokerage company,
-		managing entire knowledge database such as payments and even missed
-		phone calls using delphi programming language and MSSQL/MySQL database
-		servers.
-		\\
-		\texttt{Delphi}\slashsep
-		\texttt{MSSQL}
 		}
 \end{entrylist}
 
@@ -244,13 +276,13 @@ code and design and I like to be part of anything happening around such great pr
 \begin{entrylist}
 	\entry
 		{2005 - 2007}
-		{Asociate's Degree in computer software}
-		{Bahar University of higher education}
+		{Asociate's Degree in Software Engineering}
+		{Azad University}
 		{}
 	\entry
 		{2007 - 2009}
-		{Bachelor degree in computer software}
-		{Azad University of Mashhad}
+		{Bachelor degree in S.E}
+		{Bahar University of Higher Education}
 		{College dropout at the final term}
 \end{entrylist}
 
@@ -258,7 +290,7 @@ code and design and I like to be part of anything happening around such great pr
 %	ADDITIONAL INFORMATION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.3\textwidth}
+\begin{minipage}[t]{1.0\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 
 	\cvsect{Languages}
@@ -267,24 +299,26 @@ code and design and I like to be part of anything happening around such great pr
 	\textbf{Persian} - native\\
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.3\textwidth}
+\begin{minipage}[t]{1.0\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	\cvsect{Hobbies}
 	
-	I love to read modern literatures and science/fiction novels.
+	I love reading modern literatures and science/fiction novels. Podcast listener
+	and a science fan.
+	\\
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.3\textwidth}
+\begin{minipage}[t]{1.0\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	\cvsect{Non profit}
 	
-	An active member of Mashhad Linux User Group for 11+  years.
+	An active member of Mashhad LUG (Linux User Group) for over 11 years.
 	GUN/Linux advocate and active member of Mashhad LUG commitee
-	for 10+ years.
-	Co-founder of Mashhad BSD User Group.
-	
+	for 10 years and recently Co-founder of Mashhad BSD User Group,
+	advoating BSD operating systems and BSD licensed projects.
+
 \end{minipage}
 
 %----------------------------------------------------------------------------------------
